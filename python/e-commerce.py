@@ -41,6 +41,7 @@ class Cart:
     
 
 
+
 cart = Cart()
 cart.add_product(product1)
 print(cart.get_total_price())
