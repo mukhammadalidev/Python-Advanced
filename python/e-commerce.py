@@ -13,6 +13,7 @@ class Product:
 
 
 product1 = Product('Muhammad',4000,4)
+product2 = Product('Muhammad',4000,4)
 print(product1.get_info())
 
 
@@ -38,10 +39,21 @@ class Cart:
         for product in self.products:
             total += product.price * product.quantity
             return total 
+        # uzunlik
+    def __len__(self):
+        return len(self.products)
+
+    def __repr__(self):
+        for product in self.products:
+            return f"Product(name='{product.name}', price={product.price})"
     
 
 
 
 cart = Cart()
 cart.add_product(product1)
+cart.add_product(product2)
+p = repr(cart)
+print(len(cart))
+print(repr(cart))
 print(cart.get_total_price())
