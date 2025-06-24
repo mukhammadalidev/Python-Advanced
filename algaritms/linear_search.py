@@ -7,4 +7,4 @@ def linear_search(mevalar,target):
     return -1
 
 
-print(linear_search([3,2,1],1))
+print(linear_search(["banan","olma","anor"],"anor"))
