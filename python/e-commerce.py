@@ -33,7 +33,7 @@ class Cart:
         for product in self.products:
             return product.get_info()
     
-
+    @property
     def get_total_price(self):
         total = 0
         for product in self.products:
@@ -56,4 +56,4 @@ cart.add_product(product2)
 p = repr(cart)
 print(len(cart))
 print(repr(cart))
-print(cart.get_total_price())
+print(cart.get_total_price)
